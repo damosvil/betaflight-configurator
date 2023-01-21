@@ -37,7 +37,8 @@ const VirtualFC = {
             motor_count: 4,
             motor_poles: 14,
             use_dshot_telemetry: true,
-            use_esc_sensor: false,
+            use_dshot_edt:       true,
+            use_esc_sensor:      false,
         };
 
         virtualFC.SERVO_CONFIG = Array.from({length: 8});

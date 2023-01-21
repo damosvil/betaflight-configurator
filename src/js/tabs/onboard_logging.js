@@ -321,6 +321,14 @@ onboard_logging.initialize = function (callback) {
                 {text: "VTX_MSP"},
                 {text: "GPS_DOP"},
                 {text: "ANGLEMODE"},
+                {text: "FAILSAFE"},
+                {text: "DSHOT_STATUS_N_TEMPERATURE"},
+                {text: "DSHOT_STATUS_N_VOLTAGE"},
+                {text: "DSHOT_STATUS_N_CURRENT"},
+                {text: "DSHOT_STATUS_N_DEBUG1"},
+                {text: "DSHOT_STATUS_N_DEBUG2"},
+                {text: "DSHOT_STATUS_N_DEMAG_METRIC"},
+                {text: "DSHOT_STATUS_N_ERPM_FRACTION"},
             ];
 
             for (let i = 0; i < FC.PID_ADVANCED_CONFIG.debugModeCount; i++) {

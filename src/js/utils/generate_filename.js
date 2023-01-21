@@ -1,6 +1,6 @@
 import semver from "semver";
 import FC from "../fc";
-import { API_VERSION_1_45 } from "../data_storage";
+import { API_VERSION_1_46 } from "../data_storage";
 
 function zeroPad(value, width) {
     let valuePadded = String(value);
@@ -20,7 +20,7 @@ export function generateFilename(prefix, suffix) {
         if (FC.CONFIG.flightControllerIdentifier) {
             filename = `${FC.CONFIG.flightControllerIdentifier}_${filename}`;
         }
-        const craftName = semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_45)
+        const craftName = semver.gte(FC.CONFIG.apiVersion, API_VERSION_1_46)
             ? FC.CONFIG.craftName
             : FC.CONFIG.name;
         if (craftName.trim() !== "") {

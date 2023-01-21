@@ -1,5 +1,5 @@
 import { bit_check } from "./bit";
-import { API_VERSION_1_42, API_VERSION_1_43, API_VERSION_1_44, API_VERSION_1_45 } from './data_storage';
+import { API_VERSION_1_42, API_VERSION_1_43, API_VERSION_1_44, API_VERSION_1_45, API_VERSION_1_46 } from './data_storage';
 import semver from "semver";
 
 const INITIAL_CONFIG = {
@@ -354,6 +354,7 @@ const FC = {
             motor_count:                0,
             motor_poles:                0,
             use_dshot_telemetry:        false,
+            use_dshot_edt:              false,
             use_esc_sensor:             false,
         };
 
